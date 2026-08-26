@@ -30,5 +30,5 @@ test.describe('SauceDemo Product Scenarios', () => {
             console.log(`productName: ${productName} productPrice: ${productsPrice}`)
         }
     })
-
+ add ticket 20260826
 })
