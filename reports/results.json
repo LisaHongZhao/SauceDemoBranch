@@ -1,0 +1,163 @@
+{
+  "config": {
+    "argv": [
+      "/usr/local/bin/node",
+      "/Users/lisazhao/Documents/autoTest/SauceDemoPlaywrightFramework/node_modules/.bin/playwright",
+      "test",
+      "products.spec.ts"
+    ],
+    "configFile": "/Users/lisazhao/Documents/autoTest/SauceDemoPlaywrightFramework/playwright.config.ts",
+    "rootDir": "/Users/lisazhao/Documents/autoTest/SauceDemoPlaywrightFramework/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/lisazhao/Documents/autoTest/SauceDemoPlaywrightFramework/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/lisazhao/Documents/autoTest/SauceDemoPlaywrightFramework/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "reports/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "products.spec.ts",
+      "file": "products.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "SauceDemo Product Scenarios",
+          "file": "products.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "PROD-04 - have a valid non-negative price for each product",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3076,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "productName: Sauce Labs Backpack productPrice: $29.99\n"
+                        },
+                        {
+                          "text": "productName: Sauce Labs Bike Light productPrice: $9.99\n"
+                        },
+                        {
+                          "text": "productName: Sauce Labs Bolt T-Shirt productPrice: $15.99\n"
+                        },
+                        {
+                          "text": "productName: Sauce Labs Fleece Jacket productPrice: $49.99\n"
+                        },
+                        {
+                          "text": "productName: Sauce Labs Onesie productPrice: $7.99\n"
+                        },
+                        {
+                          "text": "productName: Test.allTheThings() T-Shirt (Red) productPrice: $15.99\n"
+                        },
+                        {
+                          "text": "this is teardown\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-24T02:22:31.390Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/lisazhao/Documents/autoTest/SauceDemoPlaywrightFramework/test-results/products-SauceDemo-Product-8b0ba-tive-price-for-each-product-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/lisazhao/Documents/autoTest/SauceDemoPlaywrightFramework/test-results/products-SauceDemo-Product-8b0ba-tive-price-for-each-product-chromium/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/lisazhao/Documents/autoTest/SauceDemoPlaywrightFramework/test-results/products-SauceDemo-Product-8b0ba-tive-price-for-each-product-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "000c94276132c4f97581-1e1ede003278fd32d2f8",
+              "file": "products.spec.ts",
+              "line": 25,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-24T02:22:30.071Z",
+    "duration": 6371.884,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
