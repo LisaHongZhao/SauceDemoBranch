@@ -39,7 +39,7 @@ export default defineConfig({
     trace: 'on',   //off,on,retain-on-failture,on-first-retry,Only-on-failture
     screenshot: 'on',
     video:'on',
-    headless: false
+    headless: true,
   },
 
   /* Configure projects for major browsers */
