@@ -20,7 +20,7 @@ let testdata =JsonReader.read<any>('sauceDemoData.json')
 let lockedUser = testdata.credentials.lockedUser
 
 test.describe('SauceDemo Login tests',()=>{
-    test('login with valid credentials',async({loginPage,page})=>{
+    test('smoke test-login with valid credentials',async({loginPage,page})=>{
         await loginPage.enterUserName(username)
         await loginPage.enterPassword(password)
         await loginPage.clickLoginButton()
