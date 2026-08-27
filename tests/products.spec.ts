@@ -12,15 +12,15 @@ console.log((ExcelReader.getCellValue('Products', 'PROD-01', 'ProductsCount', 'S
 
 
 test.describe('SauceDemo Product Scenarios', () => {
-    //   test('PROD-01 - Verify products page is display and products count',async({productsPage})=>{
-    //   await productsPage.verifyPageLoaded();
-    //   let expectProductsCount = Number(ExcelReader.getCellValue('Products','PROD-01','ProductsCount'));
-    //   let actualProductsCount = await productsPage.getProductsCount();
-    //   console.log(`expected count from excel: ${expectProductsCount}
-    //               Actual count from application: ${actualProductsCount}`)
+      test('PROD-01 - Verify products page is display and products count',async({productsPage})=>{
+      await productsPage.verifyPageLoaded();
+      let expectProductsCount = Number(ExcelReader.getCellValue('Products','PROD-01','ProductsCount'));
+      let actualProductsCount = await productsPage.getProductsCount();
+      console.log(`expected count from excel: ${expectProductsCount}
+                  Actual count from application: ${actualProductsCount}`)
 
-    //   expect(actualProductsCount).toBe(expectProductsCount);
-    //     })
+      expect(actualProductsCount).toBe(expectProductsCount);
+        })
 
     test('PROD-04 - have a valid non-negative price for each product', async ({ productsPage }) => {
         await productsPage.verifyPageLoaded();
@@ -30,5 +30,5 @@ test.describe('SauceDemo Product Scenarios', () => {
             console.log(`productName: ${productName} productPrice: ${productsPrice}`)
         }
     })
- add ticket 20260826
+//  add ticket 20260826
 })

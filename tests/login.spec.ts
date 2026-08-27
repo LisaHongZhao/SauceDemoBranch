@@ -19,26 +19,26 @@ let password=process.env.PASSWORD as string
 let testdata =JsonReader.read<any>('sauceDemoData.json')
 let lockedUser = testdata.credentials.lockedUser
 
-// test.describe('SauceDemo Login tests',()=>{
-//     test('login with valid credentials',async({loginPage,page})=>{
-//         await loginPage.enterUserName(username)
-//         await loginPage.enterPassword(password)
-//         await loginPage.clickLoginButton()
-//         //actions
-//         //loginPage.performLogin('standard_user','secret_sauce');
-//         //assertions
-//          await expect(page).toHaveURL(/\/inventory\.html/);
-//         // await expect(page.getByText('Products')).toBeVisible();
-//         await expect(loginPage.productPageTitle).toBeVisible();
-//     })
-//     test('should not login with locked user',async({loginPage,page})=>{
+test.describe('SauceDemo Login tests',()=>{
+    test('login with valid credentials',async({loginPage,page})=>{
+        await loginPage.enterUserName(username)
+        await loginPage.enterPassword(password)
+        await loginPage.clickLoginButton()
+        //actions
+        //loginPage.performLogin('standard_user','secret_sauce');
+        //assertions
+         await expect(page).toHaveURL(/\/inventory\.html/);
+        // await expect(page.getByText('Products')).toBeVisible();
+        await expect(loginPage.productPageTitle).toBeVisible();
+    })
+    test('should not login with locked user',async({loginPage,page})=>{
 
-//         loginPage.performLogin(lockedUser,password)
-//         await expect(loginPage.errorMessage).toBeVisible();
-//         await expect(loginPage.errorMessage).toHaveText(testdata.expectedMessages.lockedUser);
+        loginPage.performLogin(lockedUser,password)
+        await expect(loginPage.errorMessage).toBeVisible();
+        await expect(loginPage.errorMessage).toHaveText(testdata.expectedMessages.lockedUser);
 
-//     })
-//     //complete login without username
-//     //login without password
-//     //incorrect password
-// })
+    })
+    //complete login without username
+    //login without password
+    //incorrect password
+})
